@@ -50,13 +50,13 @@ Output: Minimum sample size n=nP of the arm P satisfying power>=0.8
 ```
 
 ```
-5. power_theta_fn_info: This function generates the informative Bayesian power curve for a particular value of theta for a given allocation and sample size.
+5. power.info_theta_fn: This function generates the informative Bayesian power curve for a particular value of theta for a given allocation and sample size.
 Argument: theta: effect retention parameter
 Output: Power values for a rangle of lamE
 ```
 
 ```
-6. power_theta_fn_noninfo: This function generates the non-informative Bayesian power curve for a particular value of theta for a given allocation and sample size.
+6. power.noninfo_theta_fn: This function generates the non-informative Bayesian power curve for a particular value of theta for a given allocation and sample size.
 Argument: theta: effect retention parameter
 Output: Power values for a rangle of lamE
 ```
