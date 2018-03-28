@@ -3,13 +3,15 @@
 
 We provide the codes that generate the power curves for varying parameters, sample size table and the posterior probabilities in the real data setting for both Frequentist and Bayesian approaches. Throughout the simulation codes the following parameters are used:
 
-lamE, lamR and lamP: The Poisson rate parameter in the arm E, R and P respectively, 
-nP=n: The sample size in the placebo arm (P), 
-nR: The sample size in the reference arm (R), 
-nE: The sample size in the experimental arm (E), 
+```
+lamE, lamR and lamP: The Poisson rate parameter in the arm E, R and P respectively
+nP=n: The sample size in the placebo arm (P)
+nR: The sample size in the reference arm (R)
+nE: The sample size in the experimental arm (E)
 theta: effect retention parameter
 r.alloc: Allocation vector which can be (1,1,1), (1,2,2) or (1,2,3)
 N: Total sample size
+```
 
 We give brief description of the R files below:
 
