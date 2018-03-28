@@ -3,13 +3,15 @@
 
 We provide the codes that generate the power curves for varying parameters, sample size table and the posterior probabilities in the real data setting for both Frequentist and Bayesian approaches. Throughout the simulation codes the following parameters are used:
 
-lamE, lamR and lamP: The Poisson rate parameter in the arm E, R and P respectively, 
-nP=n: The sample size in the placebo arm (P), 
-nR: The sample size in the reference arm (R), 
-nE: The sample size in the experimental arm (E), 
+```
+lamE, lamR and lamP: The Poisson rate parameter in the arm E, R and P respectively
+nP=n: The sample size in the placebo arm (P)
+nR: The sample size in the reference arm (R)
+nE: The sample size in the experimental arm (E)
 theta: effect retention parameter
 r.alloc: Allocation vector which can be (1,1,1), (1,2,2) or (1,2,3)
 N: Total sample size
+```
 
 We give brief description of the R files below:
 
@@ -48,13 +50,13 @@ Output: Minimum sample size n=nP of the arm P satisfying power>=0.8
 ```
 
 ```
-5. power_theta_fn_info: This function generates the informative Bayesian power curve for a particular value of theta for a given allocation and sample size.
+5. power.info_theta_fn: This function generates the informative Bayesian power curve for a particular value of theta for a given allocation and sample size.
 Argument: theta: effect retention parameter
 Output: Power values for a rangle of lamE
 ```
 
 ```
-6. power_theta_fn_noninfo: This function generates the non-informative Bayesian power curve for a particular value of theta for a given allocation and sample size.
+6. power.noninfo_theta_fn: This function generates the non-informative Bayesian power curve for a particular value of theta for a given allocation and sample size.
 Argument: theta: effect retention parameter
 Output: Power values for a rangle of lamE
 ```
