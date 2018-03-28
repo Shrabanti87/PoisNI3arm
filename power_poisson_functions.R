@@ -320,7 +320,7 @@ powerfbayes.info<-function(r.alloc,n,lamE,theta)
 } 
 
 # Power curve for a specific theta for info bayes #
-power_theta_fn<-function(theta)
+power.info_theta_fn<-function(theta)
 {
   power1f<-NULL
   
@@ -400,7 +400,7 @@ powerfbayes.noninfo<-function(r.alloc,n,lamE,theta)
 } 
 
 # Power curve for a specific theta for non-info bayes #
-power_theta_fn<-function(theta)
+power.noninfo_theta_fn<-function(theta)
 {
   power1f<-NULL
   

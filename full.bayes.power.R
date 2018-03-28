@@ -153,13 +153,13 @@ T<-1000 ### samples ###
 lamE<-seq(4,10,.1)
 
 n=20
-power.info1<-power_theta_fn_fbayes(theta=0.8)
+power.info1<-power.info_theta_fn(theta=0.8)
 n=50
-power.info2<-power_theta_fn_fbayes(theta=0.8)
+power.info2<-power.info_theta_fn(theta=0.8)
 n=100
-power.info3<-power_theta_fn_fbayes(theta=0.8)
+power.info3<-power.info_theta_fn(theta=0.8)
 n=200
-power.info4<-power_theta_fn_fbayes(theta=0.8)
+power.info4<-power.info_theta_fn(theta=0.8)
 
 ### non-info ###
 lamR<-7
@@ -172,13 +172,13 @@ T<-1000 ### samples ###
 lamE<-seq(4,10,.1)
 
 n=20
-power.noninfo1<-power_theta_fn_fbayes(theta=0.8)
+power.noninfo1<-power.noninfo_theta_fn(theta=0.8)
 n=50
-power.noninfo2<-power_theta_fn_fbayes(theta=0.8)
+power.noninfo2<-power.noninfo_theta_fn(theta=0.8)
 n=100
-power.noninfo3<-power_theta_fn_fbayes(theta=0.8)
+power.noninfo3<-power.noninfo_theta_fn(theta=0.8)
 n=200
-power.noninfo4<-power_theta_fn_fbayes(theta=0.8)
+power.noninfo4<-power.noninfo_theta_fn(theta=0.8)
 
 
 ############ plot for info vs. non-info ##############
