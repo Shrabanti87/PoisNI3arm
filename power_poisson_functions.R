@@ -502,9 +502,9 @@ power_nonconjug<-function(N,lamE,theta,r0,p0,aE,bE)
 {
   Est_Prob<-rep(0,n_star)
   
-  ne<-N/3
-  nr<-N/3
-  np<-N/3
+  nE<-N/3
+  nR<-N/3
+  nP<-N/3
   
   count<-0
   tE<-tR<-tP<-1
@@ -513,16 +513,16 @@ power_nonconjug<-function(N,lamE,theta,r0,p0,aE,bE)
   {
     count2=0
     
-    xe<-rpois(1,ne*lamE*tE)
-    xr<-rpois(1,nr*lamR*tR)
-    xp<-rpois(1,np*lamP*tP)
+    xe<-rpois(1,nE*lamE*tE)
+    xr<-rpois(1,nR*lamR*tR)
+    xp<-rpois(1,nP*lamP*tP)
     
     model.string <-"
     
     model{
     
-    xr~dpois(nr*lamR)
-    xp~dpois(np*lamP)
+    xr~dpois(nR*lamR)
+    xp~dpois(nP*lamP)
     
     u1~dbeta(alpha,beta)
     u2~dgamma(r,p)
@@ -538,8 +538,8 @@ power_nonconjug<-function(N,lamE,theta,r0,p0,aE,bE)
     
     load.module("bugs")
     load.module("mix")
-    dat<-list(xp=xp,xr=xr,np=np,nr=nr,r=r0,p=p0)
-    # browser()
+    dat<-list(xp=xp,xr=xr,nP=nP,nR=nR,r=r0,p=p0)
+
     jags.inits<-list(u1=1/7,u2=7)
     parameters<-c("lamP","lamR")
     
@@ -553,7 +553,7 @@ power_nonconjug<-function(N,lamE,theta,r0,p0,aE,bE)
     lamr_post<-post_samples[1001:2000]
     
     ae_post<-aE+xe
-    be_post<-bE+ne*tE
+    be_post<-bE+nE*tE
     
     lame_post<-rgamma(T,ae_post,be_post)
     
