@@ -16,14 +16,38 @@ N: Total sample size
 We give brief description of the R files below:
 
 
-`power_poisson_functions.R` 
+1 `power_poisson_functions.R` 
 
 This file contains all functions that need to be sourced first. The main functions, arguments and outputs are described below:
 
 
-1. `power_theta_fn_freq`
+..a) `power_theta_fn_freq`
 
 This function generates the Frequentist power curve for a particular value of theta for a given allocation and sample size.
+
+**Arguments**   
+theta: effect retention parameter
+
+**Output** 
+power: Power values for a rangle of lamE
+
+
+..b) `samplesize_fn_freq`
+
+This function calculates the Frequentist sample size for a particular value of theta for a given allocation and lamE.
+
+**Arguments**  
+r.alloc: Allocation vector
+lamE: lambda of the arm E
+theta: effect retention parameter
+
+**Output**  
+Minimum sample size n=nP of the arm P satisfying power>=0.8
+
+
+..c) `power_theta_fn_fbayes`
+
+This function generates the Bayesian power curve for a particular value of theta for a given allocation and sample size.
 
 **Arguments**  
 theta: effect retention parameter
@@ -32,31 +56,7 @@ theta: effect retention parameter
 power: Power values for a rangle of lamE
 
 
-2. `samplesize_fn_freq`
-
-This function calculates the Frequentist sample size for a particular value of theta for a given allocation and lamE.
-
-**Arguments** 
-r.alloc: Allocation vector
-lamE: lambda of the arm E
-theta: effect retention parameter
-
-**Output** 
-Minimum sample size n=nP of the arm P satisfying power>=0.8
-
-
-3. `power_theta_fn_fbayes`
-
-This function generates the Bayesian power curve for a particular value of theta for a given allocation and sample size.
-
-**Arguments** 
-theta: effect retention parameter
-
-**Output** 
-power: Power values for a rangle of lamE
-
-
-4. `samplesize_fn_fbayes`
+..d) `samplesize_fn_fbayes`
 
 This function calculates the Bayesian sample size for a particular value of theta for a given allocation and lamE.
 
@@ -66,17 +66,16 @@ lamE: lambda of the arm E
 theta: effect retention parameter
 a_max: maximum range of search for the Bayesian sample size
 
-**Output** 
+**Output**  
 Minimum sample size n=nP of the arm P satisfying power>=0.8
 
 
-5. power.info_theta_fn: This function generates the informative Bayesian power curve for a particular value of theta for a given allocation and sample size.
+..e) power.info_theta_fn: This function generates the informative Bayesian power curve for a particular value of theta for a given allocation and sample size.
 Argument: theta: effect retention parameter
 Output: Power values for a rangle of lamE
-```
 
-```
-6. power.noninfo_theta_fn: This function generates the non-informative Bayesian power curve for a particular value of theta for a given allocation and sample size.
+
+..f) power.noninfo_theta_fn: This function generates the non-informative Bayesian power curve for a particular value of theta for a given allocation and sample size.
 Argument: theta: effect retention parameter
 Output: Power values for a rangle of lamE
 ```
