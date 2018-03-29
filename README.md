@@ -1,5 +1,5 @@
 # PoisNI3arm
-### R codes for "Bayesian and Frequentist Approaches for Testing Non-inferiority for Three-arm Trials with Poisson Outcome"
+### R codes for "Bayesian and Frequentist Approaches for Testing Non-inferiority for Three-arm Trials with Poisson Outcomes"
 
 We provide the codes that generate the power curves for varying parameters and sample size table under simulation setting and the posterior probabilities in the real data setting for both Frequentist and Bayesian approaches. Throughout the codes the following notations are used for the corresponding parameters:
 
