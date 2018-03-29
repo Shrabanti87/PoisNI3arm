@@ -29,7 +29,7 @@ This function generates the Frequentist power curve for a particular value of th
 theta: effect retention parameter
 
 **Output**  
-power: Power values for a rangle of lamE
+power: Power values for a range of lamE
 
 
 b) `samplesize_fn_freq`
@@ -53,7 +53,7 @@ This function generates the Bayesian power curve for a particular value of theta
 theta: effect retention parameter
 
 **Output** 
-power: Power values for a rangle of lamE
+power: Power values for a range of lamE
 
 
 d) `samplesize_fn_fbayes`
@@ -78,7 +78,7 @@ This function generates the informative Bayesian power curve for a particular va
 theta: effect retention parameter
 
 **Output**  
-power: Power values for a rangle of lamE
+power: Power values for a range of lamE
 
 
 f) `power.noninfo_theta_fn` 
@@ -89,7 +89,7 @@ This function generates the non-informative Bayesian power curve for a particula
 theta: effect retention parameter
 
 **Output**  
-power: Power values for a rangle of lamE
+power: Power values for a range of lamE
 
 
 g) `samplesize_fn_approxbayes` 
@@ -205,4 +205,5 @@ theta: effect retention parameter
 Est_Prob: Posterior probability
 
 
+2. `
 
