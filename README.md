@@ -237,6 +237,6 @@ This file generates the non-conjugate Bayesian power curves for different values
 
 This file calculates the posterior probability under conjugate fully Bayesian approach across different theta for the 1-year and 2-year data.
 
-10. `realdata_conjugate.R`
+10. `realdata_nonconjugate.R`
 
 This file calculates the posterior probability under non-conjugate fully Bayesian approach across different theta for the 1-year and 2-year data.
