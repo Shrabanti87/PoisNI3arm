@@ -1,7 +1,7 @@
 # PoisNI3arm
 ### R codes for "Bayesian and Frequentist Approaches for Testing Non-inferiority for Three-arm Trials with Poisson Outcome"
 
-We provide the codes that generate the power curves for varying parameters, sample size table and the posterior probabilities in the real data setting for both Frequentist and Bayesian approaches. Throughout the simulation codes the following parameters are used:
+We provide the codes that generate the power curves for varying parameters and sample size table under simulation setting and the posterior probabilities in the real data setting for both Frequentist and Bayesian approaches. Throughout the codes the following parameters are used:
 
 ```
 lamE, lamR and lamP: The Poisson rate parameter in the arm E, R and P respectively
@@ -16,8 +16,10 @@ N: Total sample size
 We give brief description of the R files below:
 
 ```
-power_poisson_functions.R: This file contains all functions that need to be sourced first. The main functions, arguments and outputs are described below:
+power_poisson_functions.R: 
 ```
+This file contains all functions that need to be sourced first. The main functions, arguments and outputs are described below:
+
 ```
 1. power_theta_fn_freq: This function generates the Frequentist power curve for a particular value of theta for a given allocation and sample size.
 Argument: theta: effect retention parameter
