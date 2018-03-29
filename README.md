@@ -205,5 +205,38 @@ theta: effect retention parameter
 Est_Prob: Posterior probability
 
 
-2. `
+2. `frequentist.power.R`
 
+This file generates the Frequentist power curves for different theta, calculates the sample size for 80% power and also gives the power curve plots under different allocation. 
+
+3. `freq.simulatedpower.R`
+
+This file calculates the Frequentist simulated power across different values of lamE, theta and allocations using the calculated sample size.
+
+4. `full.bayes.power.R`
+
+This file generates the fully Bayesian (conjugate) power curves for different theta, calculates the sample size for 80% power, gives the power curve plots under different allocation and also gives the comparison plots for informative and non-informative power curves. 
+
+5. `full.bayes.simulatedpower.R`
+
+This file calculates the fully Bayesian (conjugate) simulated power across different values of lamE, theta and allocations using the calculated sample size.
+
+6. `approx.bayes.power.R`
+
+This file calculates the sample size for 80% power under the approximation-based Bayesian approach across different values of lamE, theta and allocations.
+
+7. `approx.bayes.simulatedpower.R`
+
+This file calculates the simulated power under approximation-based Bayesian approach across different values of lamE, theta and allocations using the calculated sample size.
+
+8. `full.bayes.nonconjugate.power.R`
+
+This file generates the non-conjugate Bayesian power curves for different values of theta and total sample size N, under equal allocation.
+
+9. `realdata_conjugate.R`
+
+This file calculates the posterior probability under conjugate fully Bayesian approach across different theta for the 1-year and 2-year data.
+
+10. `realdata_conjugate.R`
+
+This file calculates the posterior probability under non-conjugate fully Bayesian approach across different theta for the 1-year and 2-year data.
