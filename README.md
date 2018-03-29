@@ -21,7 +21,7 @@ We give brief description of the R files below:
 This file contains all functions that need to be sourced first. The main functions, arguments and outputs are described below:
 
 
-..a) `power_theta_fn_freq`
+a) `power_theta_fn_freq`
 
 This function generates the Frequentist power curve for a particular value of theta for a given allocation and sample size.
 
@@ -32,7 +32,7 @@ theta: effect retention parameter
 power: Power values for a rangle of lamE
 
 
-..b) `samplesize_fn_freq`
+b) `samplesize_fn_freq`
 
 This function calculates the Frequentist sample size for a particular value of theta for a given allocation and lamE.
 
@@ -42,10 +42,10 @@ lamE: lambda of the arm E
 theta: effect retention parameter
 
 **Output**  
-Minimum sample size n=nP of the arm P satisfying power>=0.8
+n: Minimum sample size of the arm P satisfying power>=0.8
 
 
-..c) `power_theta_fn_fbayes`
+c) `power_theta_fn_fbayes`
 
 This function generates the Bayesian power curve for a particular value of theta for a given allocation and sample size.
 
@@ -56,7 +56,7 @@ theta: effect retention parameter
 power: Power values for a rangle of lamE
 
 
-..d) `samplesize_fn_fbayes`
+d) `samplesize_fn_fbayes`
 
 This function calculates the Bayesian sample size for a particular value of theta for a given allocation and lamE.
 
@@ -67,82 +67,142 @@ theta: effect retention parameter
 a_max: maximum range of search for the Bayesian sample size
 
 **Output**  
-Minimum sample size n=nP of the arm P satisfying power>=0.8
+n: Minimum sample size of the arm P satisfying power>=0.8
 
 
-..e) power.info_theta_fn: This function generates the informative Bayesian power curve for a particular value of theta for a given allocation and sample size.
-Argument: theta: effect retention parameter
-Output: Power values for a rangle of lamE
+e) `power.info_theta_fn`
+
+This function generates the informative Bayesian power curve for a particular value of theta for a given allocation and sample size.
+
+**Argument** 
+theta: effect retention parameter
+
+**Output** 
+power: Power values for a rangle of lamE
 
 
-..f) power.noninfo_theta_fn: This function generates the non-informative Bayesian power curve for a particular value of theta for a given allocation and sample size.
-Argument: theta: effect retention parameter
-Output: Power values for a rangle of lamE
-```
+f) `power.noninfo_theta_fn` 
 
-```
-7. samplesize_fn_approxbayes: This function calculates the sample size under approximation-based Bayesian approach for a particular value of theta for a given allocation and lamE.
-Arguments: 
+This function generates the non-informative Bayesian power curve for a particular value of theta for a given allocation and sample size.
+
+**Argument** 
+theta: effect retention parameter
+
+**Output** 
+power: Power values for a rangle of lamE
+
+
+g) `samplesize_fn_approxbayes` 
+
+This function calculates the sample size under approximation-based Bayesian approach for a particular value of theta for a given allocation and lamE.
+
+**Arguments** 
 r.alloc: Allocation vector
 lamE: lambda of the arm E
 theta: effect retention parameter
-Output: Minimum sample size n=nP of the arm P satisfying power>=0.8
-```
 
-```
-8. power_theta_fn_nonconjug: This function generates the non-conjugate Bayesian power curve for a particular value of theta for a given allocation and sample size.
-Arguments: 
+**Output**  
+n: Minimum sample size of the arm P satisfying power>=0.8
+
+
+h) `power_theta_fn_nonconjug`
+
+This function generates the non-conjugate Bayesian power curve for a particular value of theta for a given allocation and sample size.
+
+**Arguments** 
 theta: effect retention parameter
 N: Total sample size
-Output: Power values for a range of lamE
-```
 
-```
-9. data.info1: This function calculates the Bayesian posterior probability under informative prior for a particular value of theta for the year 1 data.
-Argument: theta: effect retention parameter
-Output: Posterior probability values for a range of lamE
-```
+**Output**
+power: Power values for a range of lamE
 
-```
-10. data.info2: This function calculates the Bayesian posterior probability under informative prior for a particular value of theta for the year 2 data.
-Argument: theta: effect retention parameter
-Output: Posterior probability values for a range of lamE
-```
 
-```
-11. data.noninfo1: This function calculates the Bayesian posterior probability under non-informative prior for a particular value of theta for the year 1 data.
-Argument: theta: effect retention parameter
-Output: Posterior probability values for a range of lamE
-```
+ i) `data.info1` 
 
-```
-12. data.noninfo2: This function calculates the Bayesian posterior probability under non-informative prior for a particular value of theta for the year 2 data.
-Argument: theta: effect retention parameter
-Output: Posterior probability values for a range of lamE
-```
+This function calculates the Bayesian posterior probability under informative prior for a particular value of theta for the year 1 data.
+ 
+**Argument**
+theta: effect retention parameter
 
-```
-13. data.nc.info1: This function calculates the Bayesian posterior probability under non-conjugate informative prior for a particular value of theta for the year 1 data.
-Argument: theta: effect retention parameter
-Output: Posterior probability values for a range of lamE
-```
+**Output**
+Est_Prob: Posterior probability
 
-```
-14. data.nc.info2: This function calculates the Bayesian posterior probability under non-conjugate informative prior for a particular value of theta for the year 2 data.
-Argument: theta: effect retention parameter
-Output: Posterior probability values for a range of lamE
-```
 
-```
-15. data.nc.noninfo1: This function calculates the Bayesian posterior probability under non-conjugate non-informative prior for a particular value of theta for the year 1 data.
-Argument: theta: effect retention parameter
-Output: Posterior probability values for a range of lamE
-```
+j) `data.info2` 
 
-```
-16. data.nc.noninfo2: This function calculates the Bayesian posterior probability under non-conjugate non-informative prior for a particular value of theta for the year 2 data.
-Argument: theta: effect retention parameter
-Output: Posterior probability values for a range of lamE
-```
+This function calculates the Bayesian posterior probability under informative prior for a particular value of theta for the year 2 data.
+
+**Argument** 
+theta: effect retention parameter
+
+**Output**
+Est_Prob: Posterior probability
+
+
+k) `data.noninfo1`
+
+This function calculates the Bayesian posterior probability under non-informative prior for a particular value of theta for the year 1 data.
+
+**Argument**
+theta: effect retention parameter
+
+**Output**
+Est_Prob: Posterior probability
+
+
+l) `data.noninfo2` 
+
+This function calculates the Bayesian posterior probability under non-informative prior for a particular value of theta for the year 2 data.
+
+**Argument**
+theta: effect retention parameter
+
+**Output**
+Est_Prob: Posterior probability
+
+
+m) `data.nc.info1` 
+ 
+This function calculates the Bayesian posterior probability under non-conjugate informative prior for a particular value of theta for the year 1 data.
+
+**Argument** 
+theta: effect retention parameter
+
+**Output** 
+Est_Prob: Posterior probability
+
+
+n) `data.nc.info2` 
+
+This function calculates the Bayesian posterior probability under non-conjugate informative prior for a particular value of theta for the year 2 data.
+
+**Argument** 
+theta: effect retention parameter
+
+**Output** 
+Est_Prob: Posterior probability
+
+
+o) `data.nc.noninfo1` 
+
+This function calculates the Bayesian posterior probability under non-conjugate non-informative prior for a particular value of theta for the year 1 data.
+
+**Argument**  
+theta: effect retention parameter
+
+**Output** 
+Est_Prob: Posterior probability
+
+
+p) `data.nc.noninfo2`
+
+This function calculates the Bayesian posterior probability under non-conjugate non-informative prior for a particular value of theta for the year 2 data.
+
+**Argument** 
+theta: effect retention parameter
+
+**Output** 
+Est_Prob: Posterior probability
+
 
 
