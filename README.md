@@ -37,9 +37,9 @@ b) **`samplesize_fn_freq`**
 This function calculates the Frequentist sample size for a particular value of theta for a given allocation and lamE.
 
 **Arguments**   
-r.alloc: Allocation vector
-lamE: lambda of the arm E
-theta: effect retention parameter
+r.alloc: Allocation vector 
+lamE: lambda of the arm E 
+theta: effect retention parameter 
 
 **Output**   
 n: Minimum sample size of the arm P satisfying power>=0.8
@@ -61,10 +61,10 @@ d) **`samplesize_fn_fbayes`**
 This function calculates the Bayesian sample size for a particular value of theta for a given allocation and lamE.
 
 **Arguments**   
-r.alloc: Allocation vector
-lamE: lambda of the arm E
-theta: effect retention parameter
-a_max: maximum range of search for the Bayesian sample size
+r.alloc: Allocation vector 
+lamE: lambda of the arm E 
+theta: effect retention parameter 
+a_max: maximum range of search for the Bayesian sample size 
 
 **Output**   
 n: Minimum sample size of the arm P satisfying power>=0.8
