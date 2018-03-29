@@ -15,9 +15,8 @@ N: Total sample size
 
 We give brief description of the R files below:
 
-```
-power_poisson_functions.R: 
-```
+
+'power_poisson_functions.R' 
 This file contains all functions that need to be sourced first. The main functions, arguments and outputs are described below:
 
 ```
