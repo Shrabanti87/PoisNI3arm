@@ -109,11 +109,11 @@ h) `power_theta_fn_nonconjug`
 
 This function generates the non-conjugate Bayesian power curve for a particular value of theta for a given allocation and sample size.
 
-**Arguments**  
+**Arguments**   
 theta: effect retention parameter
 N: Total sample size
 
-**Output** 
+**Output**  
 power: Power values for a range of lamE
 
 
@@ -121,10 +121,10 @@ power: Power values for a range of lamE
 
 This function calculates the Bayesian posterior probability under informative prior for a particular value of theta for the year 1 data.
  
-**Argument** 
+**Argument**  
 theta: effect retention parameter
 
-**Output** 
+**Output**  
 Est_Prob: Posterior probability
 
 
@@ -132,10 +132,10 @@ j) `data.info2`
 
 This function calculates the Bayesian posterior probability under informative prior for a particular value of theta for the year 2 data.
 
-**Argument** 
+**Argument**  
 theta: effect retention parameter
 
-**Output** 
+**Output**  
 Est_Prob: Posterior probability
 
 
@@ -143,10 +143,10 @@ k) `data.noninfo1`
 
 This function calculates the Bayesian posterior probability under non-informative prior for a particular value of theta for the year 1 data.
 
-**Argument**
+**Argument** 
 theta: effect retention parameter
 
-**Output**
+**Output** 
 Est_Prob: Posterior probability
 
 
@@ -154,10 +154,10 @@ l) `data.noninfo2`
 
 This function calculates the Bayesian posterior probability under non-informative prior for a particular value of theta for the year 2 data.
 
-**Argument** 
+**Argument**  
 theta: effect retention parameter
 
-**Output** 
+**Output**  
 Est_Prob: Posterior probability
 
 
@@ -187,10 +187,10 @@ o) `data.nc.noninfo1`
 
 This function calculates the Bayesian posterior probability under non-conjugate non-informative prior for a particular value of theta for the year 1 data.
 
-**Argument**   
+**Argument**    
 theta: effect retention parameter
 
-**Output** 
+**Output**  
 Est_Prob: Posterior probability
 
 
@@ -198,10 +198,10 @@ p) `data.nc.noninfo2`
 
 This function calculates the Bayesian posterior probability under non-conjugate non-informative prior for a particular value of theta for the year 2 data.
 
-**Argument**  
+**Argument**   
 theta: effect retention parameter
 
-**Output**  
+**Output**   
 Est_Prob: Posterior probability
 
 
