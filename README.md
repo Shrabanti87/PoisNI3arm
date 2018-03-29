@@ -16,41 +16,60 @@ N: Total sample size
 We give brief description of the R files below:
 
 
-'power_poisson_functions.R' 
+`power_poisson_functions.R` 
+
 This file contains all functions that need to be sourced first. The main functions, arguments and outputs are described below:
 
-```
-1. power_theta_fn_freq: This function generates the Frequentist power curve for a particular value of theta for a given allocation and sample size.
-Argument: theta: effect retention parameter
-Output: Power values for a rangle of lamE
-```
 
-```
-2. samplesize_fn_freq: This function calculates the Frequentist sample size for a particular value of theta for a given allocation and lamE.
-Arguments: 
+1. `power_theta_fn_freq`
+
+This function generates the Frequentist power curve for a particular value of theta for a given allocation and sample size.
+
+**Arguments**  
+theta: effect retention parameter
+
+**Output** 
+power: Power values for a rangle of lamE
+
+
+2. `samplesize_fn_freq`
+
+This function calculates the Frequentist sample size for a particular value of theta for a given allocation and lamE.
+
+**Arguments** 
 r.alloc: Allocation vector
 lamE: lambda of the arm E
 theta: effect retention parameter
-Output: Minimum sample size n=nP of the arm P satisfying power>=0.8
-```
 
-```
-3. power_theta_fn_fbayes: This function generates the Bayesian power curve for a particular value of theta for a given allocation and sample size.
-Argument: theta: effect retention parameter
-Output: Power values for a rangle of lamE
-```
+**Output** 
+Minimum sample size n=nP of the arm P satisfying power>=0.8
 
-```
-4. samplesize_fn_fbayes: This function calculates the Bayesian sample size for a particular value of theta for a given allocation and lamE.
-Arguments: 
+
+3. `power_theta_fn_fbayes`
+
+This function generates the Bayesian power curve for a particular value of theta for a given allocation and sample size.
+
+**Arguments** 
+theta: effect retention parameter
+
+**Output** 
+power: Power values for a rangle of lamE
+
+
+4. `samplesize_fn_fbayes`
+
+This function calculates the Bayesian sample size for a particular value of theta for a given allocation and lamE.
+
+**Arguments**  
 r.alloc: Allocation vector
 lamE: lambda of the arm E
 theta: effect retention parameter
 a_max: maximum range of search for the Bayesian sample size
-Output: Minimum sample size n=nP of the arm P satisfying power>=0.8
-```
 
-```
+**Output** 
+Minimum sample size n=nP of the arm P satisfying power>=0.8
+
+
 5. power.info_theta_fn: This function generates the informative Bayesian power curve for a particular value of theta for a given allocation and sample size.
 Argument: theta: effect retention parameter
 Output: Power values for a rangle of lamE
