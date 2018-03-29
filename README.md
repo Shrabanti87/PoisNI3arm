@@ -37,9 +37,9 @@ b) **`samplesize_fn_freq`**
 This function calculates the Frequentist sample size for a particular value of theta for a given allocation and lamE.
 
 **Arguments**   
-r.alloc: Allocation vector 
-lamE: lambda of the arm E 
-theta: effect retention parameter 
+* r.alloc: Allocation vector 
+* lamE: lambda of the arm E 
+* theta: effect retention parameter 
 
 **Output**   
 n: Minimum sample size of the arm P satisfying power>=0.8
