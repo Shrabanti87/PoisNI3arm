@@ -104,7 +104,7 @@ samplesize_fn_freq<-function(r.alloc,lamE,theta)
 # internal function #
 power_fbayes<-function(r.alloc,n,lamE,theta)
 {
-  # set.seed(seedval)
+  set.seed(123)
   
   aE<-0.5
   bE<-0.00001
@@ -186,7 +186,7 @@ power_theta_fn_fbayes<-function(theta)
 
 power_fbayes<-function(r.alloc,n,lamE,theta)
 {
-  set.seed(seedval)
+  set.seed(123)
   
   aE<-0.5
   bE<-0.00001
@@ -270,7 +270,7 @@ samplesize_fn_fbayes<-function(r.alloc,lamE,theta,a_max)
 # internal function #
 powerfbayes.info<-function(r.alloc,n,lamE,theta)
 {
-  set.seed(seedval)
+  set.seed(123)
   
   aE<-70
   bE<-10
@@ -350,7 +350,7 @@ power.info_theta_fn<-function(theta)
 # internal function #
 powerfbayes.noninfo<-function(r.alloc,n,lamE,theta)
 {
-  set.seed(seedval)
+  set.seed(123)
   
   aE<-7
   bE<-1
