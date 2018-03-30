@@ -1,7 +1,7 @@
 # PoisNI3arm
 ### R codes for "Bayesian and Frequentist Approaches for Testing Non-inferiority for Three-arm Trials with Poisson Outcomes"
 
-We provide the codes that geerates the sample size table under simulation setting for both Frequentist and Bayesian approaches. Throughout the codes the following notations are used for the corresponding parameters:
+We provide the codes that generates the sample size table under simulation setting for both Frequentist and Bayesian approaches. Throughout the codes the following notations are used for the corresponding parameters:
 
 * lamE, lamR and lamP: The Poisson rate parameter in the arm E, R and P respectively
 * nP=n: The sample size in the placebo arm (P)
