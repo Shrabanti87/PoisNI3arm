@@ -1,4 +1,3 @@
-setwd("C:/BACKUP/Shrabanti/jrssc codes/")
 source("./power_poisson_functions.R")
 
 ptm<-proc.time()
