@@ -188,15 +188,6 @@ power_fbayes<-function(r.alloc,n,lamE,theta)
 {
   set.seed(123)
   
-  aE<-0.5
-  bE<-0.00001
-  
-  aR<-0.5
-  bR<-0.00001
-  
-  aP<-0.5
-  bP<-0.00001
-  
   Est_Prob<-rep(0,n_star)
   
   nP=r.alloc[1]*n
