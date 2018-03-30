@@ -188,6 +188,15 @@ power_fbayes<-function(r.alloc,n,lamE,theta)
 {
   set.seed(seedval)
   
+  aE<-0.5
+  bE<-0.00001
+  
+  aR<-0.5
+  bR<-0.00001
+  
+  aP<-0.5
+  bP<-0.00001
+  
   Est_Prob<-rep(0,n_star)
   
   nP=r.alloc[1]*n
@@ -419,7 +428,7 @@ power.noninfo_theta_fn<-function(theta)
 #### Approximate bayesian power ####
 
 # internal function #
-sample_pwr_fn_approxbayes<-function(r.alloc=r.alloc,n=i,lamE=lamE,theta=theta)
+power_approxbayes<-function(r.alloc=r.alloc,n=i,lamE=lamE,theta=theta)
 {
   nP=r.alloc[1]*n
   nR=r.alloc[2]*n
