@@ -180,7 +180,11 @@ power_theta_fn_fbayes<-function(theta)
 }
 
 # internal function#
-sample_pwr_fn_fbayes<-function(r.alloc,n,lamE,theta)
+#### fully bayesian power ####
+
+# internal function#
+
+power_fbayes<-function(r.alloc,n,lamE,theta)
 {
   set.seed(seedval)
   
@@ -207,7 +211,6 @@ sample_pwr_fn_fbayes<-function(r.alloc,n,lamE,theta)
     while (count1<T)
     {
       aE<-21; bE<-1; aR<-21; bR<-1; aP<-1; bP<-1
-
       lamEgdata=rgamma(1,aE+xE,bE+nE*tE)
       lamRgdata=rgamma(1,aR+xR,bR+nR*tR)
       lamPgdata=rgamma(1,aP+xP,bP+nP*tP)
@@ -232,8 +235,7 @@ sample_pwr_fn_fbayes<-function(r.alloc,n,lamE,theta)
   
   power<-count/n_star
   return(power)
-}   
-
+} 
 # sample size calculation #
 samplesize_fn_fbayes<-function(r.alloc,lamE,theta,a_max)
 {
@@ -245,7 +247,7 @@ samplesize_fn_fbayes<-function(r.alloc,lamE,theta,a_max)
   
   for(i in a)
   {
-    power<-c(power,sample_pwr_fn_fbayes(r.alloc=r.alloc,n=i,lamE=lamE,theta=theta))
+    power<-c(power,power_fbayes(r.alloc=r.alloc,n=i,lamE=lamE,theta=theta))
   }
   n<-try(a[min(which(power>=0.8))],silent=T)
   if(class(n)=="try-error") n<-NA
